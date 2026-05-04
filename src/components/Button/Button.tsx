@@ -1,8 +1,16 @@
 import React from 'react';
-
 import './Button.css';
 
-type ButtonVariant = 'primary' | 'secondary' | 'outline'
+type ButtonVariant =
+                     'default' |
+                     'secondary'| 
+                     'outline'|
+                     'ghost'|
+                     'destructive'|
+                     'destructive-ghost'|
+                     'inverse'|
+                     'outline-inverse'|
+                     'ghost-inverse'
 type ButtonSize = 'small' | 'medium' | 'large'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
@@ -12,7 +20,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 }
 
 export function Button({
-    variant = 'primary',
+    variant = 'default',
     size = 'medium',
     children,
     ...props

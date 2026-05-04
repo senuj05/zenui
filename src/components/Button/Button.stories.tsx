@@ -10,25 +10,60 @@ const meta: Meta<typeof Button> = {
 export default meta
 type Story = StoryObj<typeof Button>
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
-    variant: 'primary',
-    children: 'Click me',
+    variant: 'default',
+    children: 'Button',
   },
 }
 
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: 'Click me',
+    children: 'Button',
   },
 }
 
 export const Outline: Story = {
   args: {
     variant: 'outline',
-    children: 'Click me',
+    children: 'Button',
   },
+}
+
+export const Ghost: Story ={
+    args: {
+        variant: 'ghost',
+        children: 'Edit',
+    },
+}
+
+export const Destructive: Story ={
+    args: {
+        variant: 'destructive',
+        children :'Delete Account',
+    },
+}
+
+export const DestructiveGhost: Story={
+    args:{
+        variant: 'destructive-ghost',
+        children: 'Remove',
+    },
+}
+
+export const Inverse: Story={
+    args:{
+        variant: 'inverse',
+        children: 'Get started',
+    },
+}
+
+export const OutlineInverse: Story ={
+    args:{
+        variant: 'outline-inverse',
+        children: 'Learn more'
+    }
 }
 
 export const Small: Story = {
