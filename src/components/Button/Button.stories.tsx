@@ -13,69 +13,62 @@ type Story = StoryObj<typeof Button>
 export const Default: Story = {
   args: {
     variant: 'default',
-    children: 'Button',
+    children: 'DEFAULT',
   },
 }
 
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: 'Button',
+    children: 'SECONDARY',
   },
 }
 
 export const Outline: Story = {
   args: {
     variant: 'outline',
-    children: 'Button',
+    children: 'OUTLINE',
   },
 }
 
 export const Ghost: Story ={
     args: {
         variant: 'ghost',
-        children: 'Edit',
+        children: 'GHOST',
     },
 }
 
 export const Destructive: Story ={
     args: {
         variant: 'destructive',
-        children :'Delete Account',
+        children :'DELETE',
     },
 }
 
 export const DestructiveGhost: Story={
     args:{
         variant: 'destructive-ghost',
-        children: 'Remove',
+        children: 'REMOVE',
     },
 }
 
 export const Inverse: Story={
     args:{
         variant: 'inverse',
-        children: 'Get started',
+        children: 'GET STARTED',
     },
 }
 
 export const OutlineInverse: Story ={
     args:{
         variant: 'outline-inverse',
-        children: 'Learn more'
+        children: 'LEARN MORE',
     }
 }
 
-export const Small: Story = {
-  args: {
-    size: 'sm',
-    children: 'Small',
-  },
-}
-
-export const Large: Story = {
-  args: {
-    size: 'lg',
-    children: 'Large',
-  },
-}
+export const GhostInverse: Story ={
+    args:{
+        variant: 'ghost-inverse',
+        children: 'CONTACT US',
+    }
+}   

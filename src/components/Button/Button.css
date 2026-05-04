@@ -3,9 +3,9 @@ button {
   color: #FFF;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   border-radius: 5px;
   border: 1px solid #e1e1e1;
@@ -83,7 +83,7 @@ button[data-variant = "destructive"]:active:not(:disabled) {
 button[data-variant = "destructive-ghost"] {
   background: transparent;
   color: #f53d40;
-  border-color: transparent;
+  border-color: #f53d40;
 }
 button[data-variant = "destructive-ghost"] :hover:not(:disabled) {
   background: rgba(245, 61, 64, 0.1);
@@ -96,7 +96,7 @@ button[data-variant = "destructive-ghost"]:active:not(:disabled) {
 button[data-variant = "inverse"] {
   background: #fff;
   color: #160505;
-  border-color: #fff;
+  border-color:#161616;
 }
 button[data-variant = "inverse"] :hover:not(:disabled) {
   background: #f0f0f0;
@@ -109,7 +109,7 @@ button[data-variant = "inverse"]:active:not(:disabled) {
 
 /* Outline Inverse */
 button[data-variant = "outline-inverse"] {
-  background: #f0f0f0;
+  background: #cecece;
   color: #fff;
   border-color: #fff;
 }
@@ -123,8 +123,8 @@ button[data-variant = "outline-inverse"]:active:not(:disabled) {
 /* Ghost Inverse */
 button[data-variant = "ghost-inverse"] {
   background: transparent;
-  color: #fff;
-  border-color: transparent;
+  color: #b3b3b3;
+  border-color: #b3b3b3;
 }
 button[data-variant = "ghost-inverse"] :hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.1);
