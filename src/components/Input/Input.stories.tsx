@@ -11,38 +11,38 @@ export default meta
 type Story = StoryObj<typeof Input>
 
 export const Default: Story = {
-    args: {
-        variant: 'default',
-        placeholder: 'Enter text',
-    },
+  args: {
+    label: 'Email',
+  },
 }
 
-export const Placeholder: Story = {
-    args: {
-        variant: 'placeholder',
-        placeholder: 'Type something...',
-    },
+export const WithPlaceholder: Story = {
+  args: {
+    label: 'Email',
+    placeholder: 'Enter your email...',
+  },
 }
 
 export const WithValue: Story = {
-    args: {
-        variant: 'with-value',
-        value: 'No:16, Galle Road, Colombo 05',
-    },
+  args: {
+    label: 'Email',
+    value: 'hello@zenui.com',
+    onChange: () => {},
+  },
 }
 
-export const ReadOnly: Story = {
-    args: {
-        variant: 'readonly',
-        value: 'Read-only input',
-        readOnly: true,
-    },
+export const Readonly: Story = {
+  args: {
+    label: 'Email',
+    value: 'hello@zenui.com',
+    readOnly: true,
+  },
 }
 
 export const Disabled: Story = {
-    args: {
-        variant: 'disabled',
-        placeholder: 'Disabled input',
-        disabled: true,
-    },
-}   
+  args: {
+    label: 'Email',
+    placeholder: 'Enter your email...',
+    disabled: true,
+  },
+}
