@@ -1,0 +1,46 @@
+badge {
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #160505;
+    width: 100px;
+    height: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    border: 1px solid #e1e1e1;
+    transition: all 0.3s ease;
+    outline: none;
+    padding-top: 5px;
+}
+
+badge[data-variant="secondary"] {
+    background-color: #ffffff;
+    border-color: #2d0a0a;
+    color: #2d0a0a;
+}
+
+badge[data-variant="success"] {
+    background-color: #8bbb80;
+    border-color: #8bbb80;
+    color: #ffffff;
+}
+
+badge[data-variant="warning"] {
+    background-color: #eb910b;
+    border-color: #eb910b;
+    color: #ffffff;
+}
+
+badge[data-variant="outline"] {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+badge[data-variant="error"] {
+    background-color: #f94137;
+    border-color: #f94137;
+    color: #ffffff;
+}
