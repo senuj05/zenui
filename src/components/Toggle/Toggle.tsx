@@ -13,7 +13,7 @@ export function Toggle ({
 }: ToggleProps) {
     return (
         <label className={`toggle toggle-${variant}`}>
-            <input type="toggle" {...props} />
+            <input type="checkbox" {...props} />
             <span className="slider"></span>
         </label>
     )       
