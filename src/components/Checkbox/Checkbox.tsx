@@ -1,11 +1,11 @@
 import React from  'react';
 import './Checkbox.css';
 
-type CheckboxVarint = 'default' | 
+type CheckboxVariant = 'default' | 
                       'round' 
 
-interface ButtonProps extends React.CheckboxHTMLAttributes<HTMLCheckboxElement>{
-    variant?: CheckboxVarint;
+interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement>{
+    variant?: CheckboxVariant;
     children: React.ReactNode;      
 }
 
@@ -13,7 +13,7 @@ export function Checkbox({
     variant = 'default',
     children,
     ...props
-}: ButtonProps) {
+}: CheckboxProps) {
     return (
         <label data-variant={variant} className="checkbox-container">
             <input type="checkbox" {...props} />
