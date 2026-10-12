@@ -46,3 +46,19 @@ export const Disabled: Story = {
     disabled: true,
   },
 }
+
+export const WithHint: Story = {
+  args: {
+    label: 'Email',
+    hint: "We'll only use this to send your results.",
+  },
+}
+
+export const WithError: Story = {
+  args: {
+    label: 'Email',
+    value: 'hello@zenui',
+    onChange: () => {},
+    error: 'Enter an email address like name@example.com.',
+  },
+}
