@@ -1,0 +1,32 @@
+/* ZenUI design tokens: the single source of truth for visual values. */
+:root {
+  /* Brand */
+  --zen-color-brand: #160505;
+  --zen-color-brand-hover: #2d0a0a;
+
+  /* Text */
+  --zen-color-text: #160505;
+  --zen-color-text-muted: #606060;      /* 6.3:1 on white */
+  --zen-color-text-inverse: #ffffff;
+  --zen-color-text-inverse-muted: #b3b3b3; /* 9.5:1 on brand */
+
+  /* Surfaces & borders */
+  --zen-color-surface: #ffffff;
+  --zen-color-surface-subtle: #f4f3f3;  /* warm grey, matches brand */
+  --zen-color-surface-hover: #e9e8e8;
+  --zen-color-border: #e1e1e1;          /* decorative only */
+  --zen-color-border-strong: #8d8d8d;   /* form fields, 3.3:1 */
+
+  /* Status */
+  --zen-color-danger: #d92d30;          /* 4.8:1 with white text */
+  --zen-color-danger-hover: #b82326;    /* darker, not lighter: 6.4:1 */
+  --zen-color-success: #8bbb80;
+  --zen-color-warning: #eb910b;
+
+  /* Typography */
+  --zen-font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* Shape */
+  --zen-radius: 5px;
+}

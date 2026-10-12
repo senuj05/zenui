@@ -1,4 +1,6 @@
 import type { Preview } from '@storybook/react-vite'
+// Stories load components directly (not via src/index.ts), so load tokens here too.
+import '../src/tokens.css'
 
 const preview: Preview = {
   parameters: {
