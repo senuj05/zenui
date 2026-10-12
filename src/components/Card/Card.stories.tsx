@@ -34,7 +34,6 @@ export const CardButtons: Story = {
         subtitle: 'CARD SUBTITLE',
         title: 'Card Title',
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.',   
-        button :'Submit',
     }
 }
 
