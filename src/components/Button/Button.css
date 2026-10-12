@@ -1,15 +1,15 @@
 .button {
   cursor: pointer;
-  color: #FFF;
+  color: var(--zen-color-text-inverse);
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  font-family: var(--zen-font-family);
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  border-radius: 5px;
-  border: 1px solid #e1e1e1;
-  background: #160505;
+  border-radius: var(--zen-radius);
+  border: 1px solid var(--zen-color-brand);
+  background: var(--zen-color-brand);
   width: 300px;
   height: 50px;
   justify-content: center;
@@ -17,118 +17,116 @@
 }
 
 .button:focus-visible {
-  outline: 2px solid #160505;
+  outline: 2px solid var(--zen-color-brand);
   outline-offset: 2px;
 }
 
 /* Default */
-.button[data-variant="primary-alt"] {
-  background: #2d0a0a;
-  color: #fff;
-  border-color: #2d0a0a;
-}
-.button[data-variant="primary-alt"]:hover:not(:disabled) {
-  background: #3d0f0f;
-  border-color: #3d0f0f;
+.button[data-variant="default"]:hover:not(:disabled) {
+  background: var(--zen-color-brand-hover);
+  border-color: var(--zen-color-brand-hover);
 }
 
 /* Secondary */
 .button[data-variant="secondary"] {
-  background: #f4f3f3;
-  color: #160505;
-  border-color: #ece8e8;
+  background: var(--zen-color-surface-subtle);
+  color: var(--zen-color-text);
+  border-color: var(--zen-color-border);
 }
 .button[data-variant="secondary"]:hover:not(:disabled) {
-  background: #e9e8e8;
+  background: var(--zen-color-surface-hover);
 }
 
 /* Outline */
 .button[data-variant="outline"] {
   background: transparent;
-  color: #160505;
-  border-color: #160505;
+  color: var(--zen-color-text);
+  border-color: var(--zen-color-brand);
 }
 .button[data-variant="outline"]:hover:not(:disabled) {
-  background: #160505;
-  color: #fff;
+  background: var(--zen-color-brand);
+  color: var(--zen-color-text-inverse);
 }
 
 /* Ghost */
 .button[data-variant="ghost"] {
   background: transparent;
-  color: #160505;
+  color: var(--zen-color-text);
   border-color: transparent;
 }
 .button[data-variant="ghost"]:hover:not(:disabled) {
-  background: #f5f0f0;
+  background: var(--zen-color-surface-subtle);
 }
 
 /* Destructive */
-
-.button[data-variant = "destructive"] {
-  background: #f53d40;
-  color: #fff;
-  border-color:#f53d40;
+.button[data-variant="destructive"] {
+  background: var(--zen-color-danger);
+  color: var(--zen-color-text-inverse);
+  border-color: var(--zen-color-danger);
 }
-.button[data-variant = "destructive"]:hover:not(:disabled) {
-  background: #ff7875;
-  border-color: #ff7875;
+.button[data-variant="destructive"]:hover:not(:disabled),
+.button[data-variant="destructive"]:active:not(:disabled) {
+  background: var(--zen-color-danger-hover);
+  border-color: var(--zen-color-danger-hover);
 }
-.button[data-variant = "destructive"]:active:not(:disabled) {
-  background: #ff7875;
-  border-color: #ff7875;
-} 
 
 /* Destructive Ghost */
-.button[data-variant = "destructive-ghost"] {
+.button[data-variant="destructive-ghost"] {
   background: transparent;
-  color: #f53d40;
-  border-color: #f53d40;
+  color: var(--zen-color-danger);
+  border-color: var(--zen-color-danger);
 }
-.button[data-variant = "destructive-ghost"]:hover:not(:disabled) {
-  background: rgba(245, 61, 64, 0.1);
+.button[data-variant="destructive-ghost"]:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-danger) 10%, transparent);
 }
-.button[data-variant = "destructive-ghost"]:active:not(:disabled) {
-  background: rgba(245, 61, 64, 0.2);
+.button[data-variant="destructive-ghost"]:active:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-danger) 20%, transparent);
 }
 
-/* Inverse  */
-.button[data-variant = "inverse"] {
-  background: #fff;
-  color: #160505;
-  border-color:#161616;
+/* Inverse variants sit on dark surfaces, so the focus ring flips to light. */
+.button[data-variant="inverse"]:focus-visible,
+.button[data-variant="outline-inverse"]:focus-visible,
+.button[data-variant="ghost-inverse"]:focus-visible {
+  outline-color: var(--zen-color-text-inverse);
 }
-.button[data-variant = "inverse"]:hover:not(:disabled) {
-  background: #f0f0f0;
-  border-color: #f0f0f0;
+
+/* Inverse */
+.button[data-variant="inverse"] {
+  background: var(--zen-color-surface);
+  color: var(--zen-color-text);
+  border-color: var(--zen-color-surface);
 }
-.button[data-variant = "inverse"]:active:not(:disabled) {
-  background: #e0e0e0;
-  border-color: #e0e0e0;
+.button[data-variant="inverse"]:hover:not(:disabled) {
+  background: var(--zen-color-surface-subtle);
+  border-color: var(--zen-color-surface-subtle);
+}
+.button[data-variant="inverse"]:active:not(:disabled) {
+  background: var(--zen-color-surface-hover);
+  border-color: var(--zen-color-surface-hover);
 }
 
 /* Outline Inverse */
-.button[data-variant = "outline-inverse"] {
+.button[data-variant="outline-inverse"] {
   background: transparent;
-  color: #fff;
-  border-color: #fff;
+  color: var(--zen-color-text-inverse);
+  border-color: var(--zen-color-text-inverse);
 }
-.button[data-variant = "outline-inverse"]:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.1);
+.button[data-variant="outline-inverse"]:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-text-inverse) 10%, transparent);
 }
-.button[data-variant = "outline-inverse"]:active:not(:disabled) {
-  background: rgba(255, 255, 255, 0.2);
-} 
+.button[data-variant="outline-inverse"]:active:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-text-inverse) 20%, transparent);
+}
 
 /* Ghost Inverse */
-.button[data-variant = "ghost-inverse"] {
+.button[data-variant="ghost-inverse"] {
   background: transparent;
-  color: #b3b3b3;
-  border-color: #b3b3b3;
+  color: var(--zen-color-text-inverse-muted);
+  border-color: var(--zen-color-text-inverse-muted);
 }
-.button[data-variant = "ghost-inverse"]:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.1);
+.button[data-variant="ghost-inverse"]:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-text-inverse) 10%, transparent);
 }
-.button[data-variant = "ghost-inverse"]:active:not(:disabled) {
-  background: rgba(255, 255, 255, 0.2);
-} 
+.button[data-variant="ghost-inverse"]:active:not(:disabled) {
+  background: color-mix(in srgb, var(--zen-color-text-inverse) 20%, transparent);
+}
