@@ -8,7 +8,7 @@ type BadgeVariant = 'default' |
                     'outline' |
                     'error'
 
-interface BadgeProps extends React.BadgeHTMLAttributes<HTMLBadgeElement>{
+interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement>{
     variant?: BadgeVariant;
     children: React.ReactNode;      
 }
@@ -19,11 +19,12 @@ export function Badge({
     ...props
 }: BadgeProps) {
     return (
-        <badge
+        <span
+        className='badge'
         data-variant={variant}
         {...props}
         >
         {children}
-        </badge>
+        </span>
     )       
 }

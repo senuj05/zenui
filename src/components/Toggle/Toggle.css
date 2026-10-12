@@ -35,9 +35,9 @@
     transition: .4s;
 }
 
-input:checked + .slider {
+.toggle input:checked + .slider {
     background-color: #ebebeb;
 }
-input:checked + .slider:before {
+.toggle input:checked + .slider:before {
     transform: translateX(36px);
 }

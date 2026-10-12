@@ -22,11 +22,14 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 export function Button({
     variant = 'default',
     size = 'medium',
+    type = 'button',
     children,
     ...props
 }: ButtonProps) {
     return (
         <button
+        className="button"
+        type={type}
         data-variant={variant}
         data-size={size}
         {...props}

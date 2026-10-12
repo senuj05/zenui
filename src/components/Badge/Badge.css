@@ -1,4 +1,4 @@
-badge {
+.badge {
     display: inline-block;
     text-align: center;
     border-radius: 8px;
@@ -15,31 +15,31 @@ badge {
     padding-top: 5px;
 }
 
-badge[data-variant="secondary"] {
+.badge[data-variant="secondary"] {
     background-color: #ffffff;
     border-color: #2d0a0a;
     color: #2d0a0a;
 }
 
-badge[data-variant="success"] {
+.badge[data-variant="success"] {
     background-color: #8bbb80;
     border-color: #8bbb80;
     color: #ffffff;
 }
 
-badge[data-variant="warning"] {
+.badge[data-variant="warning"] {
     background-color: #eb910b;
     border-color: #eb910b;
     color: #ffffff;
 }
 
-badge[data-variant="outline"] {
+.badge[data-variant="outline"] {
     background-color: #000000;
     border-color: #000000;
     color: #ffffff;
 }
 
-badge[data-variant="error"] {
+.badge[data-variant="error"] {
     background-color: #f94137;
     border-color: #f94137;
     color: #ffffff;
