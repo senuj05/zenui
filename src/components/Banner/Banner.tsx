@@ -6,7 +6,7 @@ type BannerVariant = 'info'
                     | 'warning'
                     | 'error';
 
-interface BannerProps extends React.BannerHTMLAttributes<HTMLDivElement> {
+interface BannerProps extends React.HTMLAttributes<HTMLDivElement> {
     variant?: BannerVariant;
     children: React.ReactNode;
 }
