@@ -40,6 +40,12 @@ export default function App() {
 }
 ```
 
+## Documentation
+
+- [Getting started](docs/getting-started.md): installation, styles, TypeScript, framework notes
+- [Component reference](docs/components.md): props and examples for every component
+- [Theming](docs/theming.md): customise colours, fonts and radius with design tokens
+
 ## Requirements
 
 - React 18+
